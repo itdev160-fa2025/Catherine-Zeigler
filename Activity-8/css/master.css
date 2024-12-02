@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: #efefef;
+    background-color: #2D2D2D;
+    border-bottom: solid 1px #000;
+}
+
+header .header-title {
+    display: inline-block;
+}
+
+
+.header-menu button {
+    padding: 10px 15px;    
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.header-menu button:hover {
+    background-color: #45a049;
+}
+main {
+    flex: 1;
+    padding: 20px;
+}
+#dislpay-content {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+    width: 300px;
+    max-width: 90%;
+}
+.modal.visible {
+    display: block;
+}
+.modal section{
+    margin-bottom: 20px;
+}
+.modal.input[type="text"]{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+.modal footer {
+    display: flex;
+    justify-content: space-between;
+}
+#modal-backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+#modal-backdrop.visible {
+    display: blcok;
+}
+button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    opacity: .9;
+}
+#cancel-button {
+    background-color: #f44336;
+    color: white;
+}
+#cancel-button:hover {
+    background-color: #d32f2f;
+}
+#save-button {
+    background-color: #4caf50;
+    color: black;
+}
+save-button:hover {
+    background-color: #45a049;
+}

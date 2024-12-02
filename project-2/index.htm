@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Santa!</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+</head>
+<body>
+    <header>
+        <h1 id ="santaMessage"></h1>
+    </header>
+    <main>
+        <section id="emailSanta">
+        <h2>Email Santa!</h2>
+        <form id="emailSantaForm">
+            <input type="text" id="nameInput" placeholder="Your Name" required/>
+            <input type="email" id="emailInput" placeholder="Your Email" required/>
+            <textarea id="messageInput" placeholder="Write to Santa!" required></textarea>
+            <button type="submit" id="sendButton">Send to Santa</button>
+        </form>    
+        <h3>Sent Emails</h3>
+        <ul id="emailList"></ul>
+        <div id="santaReply" class="reply"></div>
+
+        </section>
+
+        <section id="christmasListSection">
+            <h2>Your Christmas List!</h2>
+            <input type="text" id="listItemInput" placeholder="Add to your list!" />
+            <button id="addItemButton">Add Item</button>
+            <h3>Your List</h3>
+            <ul id="christmasList"></ul>
+        </section>
+        
+    </main>
+
+<footer>
+    <p>&copy; 2024 Santa's Workshop</p>
+</footer>
+
+<script src="js/script.js"></script>
+    
+</body>
+</html>
